@@ -20,6 +20,15 @@ class ExcelService:
     def get_column_data(cls, file_name, column_name):
         return ExcelService.get_all_data(file_name)[column_name]
 
+    @classmethod
+    def get_date_of_birth_of_all_user(cls, file_name):
+        birthday_column = cls.get_column_data(file_name, "Birthday")
+        birthday_month = list(pd.DatetimeIndex(
+            birthday_column).month)
+        birthday_day = list(pd.DatetimeIndex(
+            birthday_column).day)
+        return birthday_month, birthday_day
+
 
 class ChromeService:
     @classmethod
