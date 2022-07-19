@@ -1,17 +1,16 @@
-## 0. Installing packages
+## 0. Create virtual environment python and enable
+#### link: [https://docs.python.org/3/library/venv.html]
 
-+ pip install selenium
-+ pip install python-dotenv
+## 1. Installing packages
++ pip install selenium, python-dotenv, pandas
 
-
-## 1. Download chrome web driver with the version equals to chrome version in os
+## 2. Download chrome web driver with the version equals to chrome version in os
 #### link: [https://chromedriver.chromium.org/downloads]
 
-## 2. Create a file "data.csv" of name, birthday, and instagram_name like "mock_data.csv"
+## 3. Create a file "data.csv" like "mock_data.csv"
 
+## 4. Create a file ".env" like ".env_example"
 
-## 3. Create a file .env file of username, password, and website_url like ".env_example"
+## 5. Run (python messenger.py)
 
-## 4. Run (python messenger.py)
-
-## 5. OK
+## 6. OK

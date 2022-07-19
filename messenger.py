@@ -4,9 +4,9 @@ from selenium.webdriver.common.by import By
 import time
 import pandas as pd
 import os
-from dotenv import load_env
+from dotenv import load_dotenv
 
-load_env()
+load_dotenv()
 
 # sec everytime sleep
 sec = 4
@@ -15,8 +15,8 @@ sec = 4
 first_time = True
 
 # get info from .env
-username = os.getenv('USERNAME')
-password = os.getenv('PASSWORD')
+username = os.getenv('USER_NAME')
+password = os.getenv('PASS_WORD')
 website = os.getenv('WEBSITE')
 
 
@@ -69,7 +69,7 @@ def send_message(p_message):
 
 
 def get_all_insta_names():
-    return pd.read_csv("data")["Insta"]
+    return pd.read_excel("data.xlsx")["Insta"]
 
 
 def __main__():
