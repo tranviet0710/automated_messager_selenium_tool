@@ -2,7 +2,7 @@
 #### link: [https://docs.python.org/3/library/venv.html]
 
 ## 1. Installing packages
-+ pip install selenium, python-dotenv, pandas
++ pip install selenium, python-dotenv, pandas, openpyxl
 
 ## 2. Download chrome web driver with the version equals to chrome version in os
 #### link: [https://chromedriver.chromium.org/downloads]

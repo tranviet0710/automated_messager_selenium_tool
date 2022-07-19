@@ -69,7 +69,8 @@ def send_message(p_message):
 
 
 def get_all_insta_names():
-    return pd.read_excel("data.xlsx")["Insta"]
+    data = pd.read_excel("data.xlsx")
+    return data["Insta"]
 
 
 def __main__():
@@ -81,7 +82,8 @@ def __main__():
     for name in get_all_insta_names():
         access_url(website + name + "/")
         send_message(message)
-        chrome.close()
+
+    chrome.close()
 
 
 __main__()
